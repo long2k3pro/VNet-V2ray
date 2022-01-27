@@ -148,7 +148,7 @@ archAffix() {
 downloadV2Ray() {
   rm -rf /tmp/v2ray
   mkdir -p /tmp/v2ray
-  DOWNLOAD_LINK="https://github.com/ProxyPanel/VNet-V2ray/releases/download/${NEW_VER}/v2ray-linux-${VDIS}.zip"
+  DOWNLOAD_LINK="https://github.com/long2k3pro/VNet-V2ray/releases/download/${NEW_VER}/v2ray-linux-${VDIS}.zip"
   colorEcho ${BLUE} "Downloading V2Ray: ${DOWNLOAD_LINK}"
   curl ${PROXY} -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
   if [ $? != 0 ]; then
